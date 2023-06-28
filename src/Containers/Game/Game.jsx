@@ -241,7 +241,7 @@ const Game = () => {
 
   useEffect(() => {
     const fetchTopRecords = async () => {
-      const { data } = await axios.get();
+      const { data } = await axios.get('');
       setTopRecords(data.allPlayers);
     }
     fetchTopRecords();
